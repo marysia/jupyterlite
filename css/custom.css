@@ -1,0 +1,110 @@
+:root {
+	--blue: #1EB0E0;
+    --dark-blue: #364069; 
+	--darkest-blue: #1A1D33;
+	--dark-grey: #777D8F;
+	--light-grey: #D0D5E0;
+	--red: #FA4645;
+	--orange: #FFB82B;
+	--green: #1EE058;
+	--purple: #7253E0;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/MuseoSans_500.woff');
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/MuseoSans_500_Italic.woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/MuseoSans-300.otf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/MuseoSans-300-Italic.otf');
+  font-weight: 100;
+  font-style: italic;
+}
+
+div.jp-MarkdownOutput h1,
+div.text_cell_render h1 {
+    color: #1EB0E0;
+    font-size: 24pt;
+}
+
+div.jp-MarkdownOutput h2,
+div.text_cell_render h2 {
+    color: #696969;
+    font-size: 28pt;
+}
+div.jp-MarkdownOutput h3,
+div.text_cell_render h3 {
+    color: brown;
+    font-size: 24pt;
+}
+div.jp-MarkdownOutput h4,
+div.text_cell_render h4 {
+    color: navy;
+    font-size: 16pt;
+}
+div.jp-MarkdownOutput h5,
+div.text_cell_render h5 {
+    font-size: 14pt;
+}
+div.jp-MarkdownOutput h6,
+div.text_cell_render h6 {
+    font-size: 14pt;
+    color: #696969;
+}
+
+div.jp-MarkdownOutput h3,
+div.jp-MarkdownOutput h4,
+div.jp-MarkdownOutput h5,
+div.jp-MarkdownOutput h6,
+div.text_cell_render h3,
+div.text_cell_render h4,
+div.text_cell_render h5,
+div.text_cell_render h6 {
+    font-weight: 300;
+}
+
+
+
+.container { width:99% !important; }
+.rendered_html img{
+    margin-left: 1px;
+    display: inline-block;
+}
+.rendered_html table{
+    margin-left: 1px;
+    display: inline-block;
+}
+
+
+/* remove the run cell button */
+.code_cell .run_this_cell {
+    visibility: hidden;
+    cursor: pointer;
+    color: #333;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0ex;
+    padding-right: 0ex;
+    width: 0ex;
+}
+@media not all, (any-pointer: coarse)
+.code_cell.selected .run_this_cell {
+    visibility: visible;
+}
+
+/* remove pilcrow */
+.anchor-link{
+    font-size: 0;
